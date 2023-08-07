@@ -3,7 +3,6 @@ package lmia
 // leet code link: https://leetcode.com/problems/longest-mountain-in-array/
 
 import "core:fmt"
-import "core:slice"
 
 lmia :: proc() {
   //data : []int = {2,1,4,7,3,2,5} // Expected: 5
