@@ -5,8 +5,9 @@ import s "core:strings"
 import "core:slice"
 
 lcp :: proc() {
-  input : []string = {"flower", "flow", "flight"}
-  //input : []string = {"dog", "racecar", "car"}
+  //input : []string = {"flower", "flow", "flight"} // Expected: "fl"
+  //input : []string = {"dog", "racecar", "car"} // Expected: "" 
+  input : []string = {"repost", "report", "reposte", "reportoir"} // Expected: "repo"
   ret : string
 
   fmt.println("Input Data :: ", input)
