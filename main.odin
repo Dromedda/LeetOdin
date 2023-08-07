@@ -13,11 +13,6 @@ main :: proc() {
     return
   }
 
-  if os.args[1] == "twosum" {
-    twosum.twosum()
-  }
-
-  if os.args[1] == "lcp" {
-    lcp.lcp()
-  }
+  if os.args[1] == "twosum" { twosum.twosum() }
+  if os.args[1] == "lcp" { lcp.lcp() }
 }

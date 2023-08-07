@@ -10,7 +10,7 @@ lcp :: proc() {
   input : []string = {"repost", "report", "reposte", "reportoir"} // Expected: "repo"
   ret : string
 
-  fmt.println("Input Data :: ", input)
+  fmt.println("Input Data:: ", input)
 
   slice.sort_by(input[:], proc(x, y: string) -> bool{ return len(x) < len(y)} )
   for i := 1; i < len(input); i += 1 {
@@ -21,6 +21,6 @@ lcp :: proc() {
     }
   }
 
-  fmt.println("RESULT :: ", ret)
+  fmt.println("Result:: ", ret)
 }
 

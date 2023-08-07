@@ -6,10 +6,9 @@ import "core:slice"
 twosum :: proc() {
   input : [dynamic]int = {-1,-2,-3,-4,-5}
   target := -8
-  fmt.println("RUNNING TWOSUM USING INPUT::", input, "\nTARGET SUM :: ", target)
-  fmt.println("EXPECTED RESULT:: [2, 4]")
+  fmt.println("Input Data:: ", input, "\nTarget Value:: ", target)
   ret := sumCheck(input[:], target)
-  fmt.println("RESULT::", ret)
+  fmt.println("Result::", ret)
 }
 
 @(private="file")
