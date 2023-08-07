@@ -13,8 +13,8 @@ twosum :: proc() {
 @(private="file")
 sumCheck:: proc(arr: []int, target: int) -> (ret: [2]int) {
   for i := 0; i < len(arr); i += 1 {
-    for j := i; j < len(arr); j += 1 {
-      if (arr[i] + arr[j] == target) && i != j {
+    for j := i + 1; j < len(arr); j += 1 {
+      if (arr[i] + arr[j] == target) {
         ret[0], ret[1] = i, j
       }
     }
