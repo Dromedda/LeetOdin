@@ -1,7 +1,8 @@
 # Leet Code in Odin Lang
 
-## To run 
-cd into the directory, and use 
+To run:
+cd into the directory, and use
+
 ```
-  odin build . && LeetOdin.bin  
+  odin build . && LeetOdin.bin
 ```
