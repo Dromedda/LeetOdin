@@ -1,5 +1,7 @@
 package lmia 
 
+// leet code link: https://leetcode.com/problems/longest-mountain-in-array/
+
 import "core:fmt"
 import "core:slice"
 
