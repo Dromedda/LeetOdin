@@ -1,5 +1,7 @@
 package lcp
 
+// leet code link: https://leetcode.com/problems/longest-common-prefix/
+
 import "core:fmt"
 import s "core:strings"
 import "core:slice"

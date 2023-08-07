@@ -1,5 +1,7 @@
 package twosum
 
+// leet code link: https://leetcode.com/problems/two-sum/
+
 import "core:fmt"
 import "core:slice"
 
