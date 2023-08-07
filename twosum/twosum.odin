@@ -3,11 +3,14 @@ package twosum
 import "core:fmt"
 import "core:slice"
 
+// Entry Point
 twosum :: proc() {
   input : [dynamic]int = {-1,-2,-3,-4,-5}
   target := -8
+  fmt.println("RUNNING TWOSUM USING INPUT::", input, "\nTARGET SUM :: ", target)
+  fmt.println("EXPECTED RESULT:: [2, 4]")
   ret := sumCheck(input[:], target)
-  fmt.println(ret)
+  fmt.println("RESULT::", ret)
 }
 
 @(private="file")
