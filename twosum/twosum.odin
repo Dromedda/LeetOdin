@@ -1,7 +1,7 @@
 package twosum
 
 import "core:fmt"
-import "core:sort"
+import "core:slice"
 
 twosum :: proc() {
   input : [dynamic]int = {-1,-2,-3,-4,-5}
@@ -19,6 +19,6 @@ sumCheck:: proc(arr: []int, target: int) -> (ret: [2]int) {
       }
     }
   }
-  sort.quick_sort(ret[:]) // Not neccessary, but i like having the return sorted
+  slice.sort(ret[:]) // Not neccessary, but i like having the return sorted
   return
 }
