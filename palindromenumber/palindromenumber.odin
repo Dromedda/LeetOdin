@@ -7,8 +7,8 @@ import "core:fmt"
 
 pa :: proc() {
   //input : int = 121 
-  //input : int = 3210123 
-  input : int = 9832892123127
+  input : int = 3210123 
+  //input : int = 9832892123127
   //input : int = -323
   comps : [dynamic]int
   res : [dynamic]int  
@@ -30,16 +30,14 @@ pa :: proc() {
   res = slice.clone_to_dynamic(comps[:])
   slice.reverse(comps[:])
 
-  if (len(comps) == len(res)) { 
-    for i := 0; i < len(comps); i += 1 {
-      if (res[i] != comps[i]) {
+
+  if len(comps) == len(res) {
+    for i := 0; i < len(comps); i += 1{
+      if slice.cmp(comps[i], res[i]) != slice.Ordering.Equal {
         fmt.println("False")
         return
       }
     }
-  } else {
-      fmt.println("False")
-      return
   }
   
   fmt.println("True")
