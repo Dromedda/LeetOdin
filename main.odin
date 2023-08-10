@@ -10,7 +10,7 @@ main :: proc() {
   if (len(os.args) < 2) {
     fmt.println("Please provide a problem to run")
     fmt.println("Example usage: ./LeetOdin.bin twosum")
-    fmt.println("Available problems: \n  > twosum\n  > lcp\n  > lmia\n")
+    fmt.println("Available problems: \n  > twosum\n  > lcp ( Longest Common Prefix )\n  > lmia ( Longest Mountain In Array )\n")
     return
   }
 

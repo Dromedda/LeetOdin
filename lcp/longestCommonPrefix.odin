@@ -22,7 +22,6 @@ lcp :: proc() {
       }
     }
   }
-
   fmt.println("Result:: ", ret)
 }
 
